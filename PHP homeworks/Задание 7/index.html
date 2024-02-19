@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form enctype="multipart/form-data" action="upload.php" method="POST">
+        <input type="hidden" name="MAX_FILE_SIZE" value="30000" />
+        <label for="file_name">С каким именем сохранить файл на сервере</label>
+        <input name="file_name" id="file_name" type="text">
+        <br>
+        <br>
+        Выберите файл: <input name="content" type="file" />
+        <br>
+        <br>
+        <input type="submit" value="Отправить файл" />
+    </form>
+</body>
+</html>
